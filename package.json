@@ -1,0 +1,13 @@
+{
+  "name": "prismllm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build:web": "esbuild src/app.ts --bundle --format=iife --target=safari17 --outfile=web/app.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^6.0.0"
+  }
+}
